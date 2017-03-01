@@ -4,12 +4,17 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    # Asks the User model to retrieve a list of all users from the db,
+    # then places htem in the variable @users
     @users = User.all
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    # find the user record
+    # @user = User.find(params[:id])
+    # @micropost = @user.microposts.first
   end
 
   # GET /users/new
